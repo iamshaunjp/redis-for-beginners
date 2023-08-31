@@ -11,7 +11,7 @@ const client = createClient({
 client.on('error', err => console.log(err))
 
 if (!client.isOpen) {
-  await client.connect()
+  client.connect()
 }
 
 // client.set('name', 'mario')
